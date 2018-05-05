@@ -1,0 +1,19 @@
+# twitter/twitter-kit-ios
+binary "https://ton.twimg.com/syndication/twitterkit/ios/TwitterKit.json"
+binary "https://ton.twimg.com/syndication/twitterkit/ios/TwitterCore.json"
+
+github "ReactiveX/RxSwift" == 4.1.2
+github "RxSwiftCommunity/RxOptional" == 3.3.0
+github "Hearst-DD/ObjectMapper" == 3.1.0
+github "antitypical/Result" == 3.2.4
+github "kean/Nuke" == 6.1
+github "DaveWoodCom/XCGLogger" == 6.0.2
+github "PrideChung/FontAwesomeKit" == 2.2.1
+github "jdg/MBProgressHUD" == 1.1.0
+github "WenchaoD/FSCalendar" == 2.7.9
+github "fumiyasac/handMadeCalendarAdvance" == 0.1.6
+github "realm/realm-cocoa" == 3.4.0
+github "radex/SwiftyUserDefaults" == 3.0.1
+github "kirualex/SwiftyGif" == 4.1.0
+github "scalessec/Toast-Swift" == 3.0.1
+github "viccalexander/Chameleon" == 2.2.0

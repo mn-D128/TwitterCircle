@@ -1,0 +1,1508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B777CB32071435F00C6363F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777CB22071435F00C6363F /* AppDelegate.swift */; };
+		3B777CBA2071435F00C6363F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B777CB92071435F00C6363F /* Assets.xcassets */; };
+		3B777CBD2071435F00C6363F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B777CBB2071435F00C6363F /* LaunchScreen.storyboard */; };
+		3B777CC82071435F00C6363F /* TwitterCircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777CC72071435F00C6363F /* TwitterCircleTests.swift */; };
+		3B777CD32071435F00C6363F /* TwitterCircleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777CD22071435F00C6363F /* TwitterCircleUITests.swift */; };
+		3B777CE12072886000C6363F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B777CE02072886000C6363F /* Localizable.strings */; };
+		3B777CE32072888C00C6363F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B777CE22072888C00C6363F /* InfoPlist.strings */; };
+		3B777CE520728A6000C6363F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B777CE420728A6000C6363F /* Settings.bundle */; };
+		3B777CEA2072918000C6363F /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B777CE72072918000C6363F /* TwitterCore.framework */; };
+		3B777CEB2072918000C6363F /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B777CE82072918000C6363F /* TwitterKit.framework */; };
+		3B777CEC2072918000C6363F /* TwitterShareExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B777CE92072918000C6363F /* TwitterShareExtensionUI.framework */; };
+		3B777CFB2076536300C6363F /* VendorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777CFA2076536300C6363F /* VendorInfo.swift */; };
+		3B777CFF2076560500C6363F /* TwitterAuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B777CFD2076560400C6363F /* TwitterAuthViewController.storyboard */; };
+		3B777D002076560500C6363F /* TwitterAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777CFE2076560400C6363F /* TwitterAuthViewController.swift */; };
+		3B777D4C20765A1C00C6363F /* Double+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D1920765A1B00C6363F /* Double+String.swift */; };
+		3B777D4D20765A1C00C6363F /* Int64+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D1A20765A1B00C6363F /* Int64+String.swift */; };
+		3B777D4E20765A1C00C6363F /* Notification+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D1B20765A1B00C6363F /* Notification+Base.swift */; };
+		3B777D4F20765A1C00C6363F /* Notification+UIKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D1C20765A1B00C6363F /* Notification+UIKeyboard.swift */; };
+		3B777D5020765A1C00C6363F /* NSObject+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D1D20765A1B00C6363F /* NSObject+Base.swift */; };
+		3B777D5120765A1C00C6363F /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D1E20765A1B00C6363F /* String+Localized.swift */; };
+		3B777D5220765A1C00C6363F /* UIButton+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D1F20765A1B00C6363F /* UIButton+Localized.swift */; };
+		3B777D5320765A1C00C6363F /* UIColor+255.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D2020765A1B00C6363F /* UIColor+255.swift */; };
+		3B777D5420765A1C00C6363F /* UILabel+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D2120765A1B00C6363F /* UILabel+Localized.swift */; };
+		3B777D5520765A1C00C6363F /* UINavigationController+Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D2220765A1B00C6363F /* UINavigationController+Transition.swift */; };
+		3B777D5620765A1C00C6363F /* UITableView+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D2320765A1B00C6363F /* UITableView+Base.swift */; };
+		3B777D5720765A1C00C6363F /* UIView+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D2420765A1B00C6363F /* UIView+Base.swift */; };
+		3B777D5820765A1C00C6363F /* UIViewController+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D2520765A1B00C6363F /* UIViewController+Base.swift */; };
+		3B777D5920765A1C00C6363F /* URL+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D2620765A1B00C6363F /* URL+Base.swift */; };
+		3B777D6D20765D7900C6363F /* FollowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D6C20765D7900C6363F /* FollowListViewController.swift */; };
+		3B777D6F20765D8600C6363F /* FollowListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B777D6E20765D8600C6363F /* FollowListViewController.storyboard */; };
+		3B777D7F20767E1D00C6363F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B777D7D20767E1D00C6363F /* RxSwift.framework */; };
+		3B777D8020767E1D00C6363F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B777D7E20767E1D00C6363F /* RxCocoa.framework */; };
+		3B777D8A2077B22F00C6363F /* FriendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D822077B22F00C6363F /* FriendRepository.swift */; };
+		3B777D8C2077B22F00C6363F /* SessionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D852077B22F00C6363F /* SessionDto.swift */; };
+		3B777D8D2077B22F00C6363F /* TKFriendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D882077B22F00C6363F /* TKFriendRepository.swift */; };
+		3B777D902077B7CE00C6363F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B777D8F2077B7CE00C6363F /* ObjectMapper.framework */; };
+		3B777D9B2077D36A00C6363F /* FriendResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777D9A2077D36A00C6363F /* FriendResponseDto.swift */; };
+		3B777DA42078578800C6363F /* UserDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777DA32078578800C6363F /* UserDto.swift */; };
+		3B777DA620785EFC00C6363F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B777DA520785EFB00C6363F /* Result.framework */; };
+		3B777DA92078B20500C6363F /* FollowListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777DA82078B20500C6363F /* FollowListViewModel.swift */; };
+		3B777DAE2078CA7600C6363F /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777DAC2078CA7600C6363F /* UserListCell.swift */; };
+		3B777DAF2078CA7600C6363F /* UserListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B777DAD2078CA7600C6363F /* UserListCell.xib */; };
+		3B777DB12078D51500C6363F /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B777DB02078D51400C6363F /* Nuke.framework */; };
+		3B777DD5207918CE00C6363F /* NextLoaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777DD4207918CE00C6363F /* NextLoaderTableView.swift */; };
+		3B777DD82079B0E200C6363F /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777DD72079B0E200C6363F /* CircleViewController.swift */; };
+		3B777DDA2079B11A00C6363F /* CircleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B777DD92079B11A00C6363F /* CircleViewController.storyboard */; };
+		3B777DDF2079D38200C6363F /* UserTimelineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777DDE2079D38200C6363F /* UserTimelineRepository.swift */; };
+		3B777DE12079D41400C6363F /* TKUserTimelineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777DE02079D41400C6363F /* TKUserTimelineRepository.swift */; };
+		3B777DE42079D9CC00C6363F /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B777DE32079D9CC00C6363F /* ResponseError.swift */; };
+		3BE1BFBD2079FAB300AFEFAE /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1BFBC2079FAB300AFEFAE /* CircleViewModel.swift */; };
+		3BE1BFBF2079FC1900AFEFAE /* TweetDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1BFBE2079FC1900AFEFAE /* TweetDto.swift */; };
+		3BE1BFC5207A1D2E00AFEFAE /* CircleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1BFC4207A1D2E00AFEFAE /* CircleDate.swift */; };
+		3BE1BFC7207A3E7500AFEFAE /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE1BFC6207A3E7500AFEFAE /* RxOptional.framework */; };
+		3BE1BFC9207A4D4600AFEFAE /* TKBaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1BFC8207A4D4600AFEFAE /* TKBaseRepository.swift */; };
+		3BE1BFCB207A50E200AFEFAE /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1BFCA207A50E200AFEFAE /* PieChartView.swift */; };
+		3BE1BFCD207BA9CA00AFEFAE /* CGFloat+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1BFCC207BA9CA00AFEFAE /* CGFloat+Math.swift */; };
+		3BE1BFCF207BAE4D00AFEFAE /* Double+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1BFCE207BAE4D00AFEFAE /* Double+Math.swift */; };
+		3BE1BFDC207BB87400AFEFAE /* TweetListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1BFDA207BB87400AFEFAE /* TweetListCell.swift */; };
+		3BE1BFDD207BB87400AFEFAE /* TweetListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BE1BFDB207BB87400AFEFAE /* TweetListCell.xib */; };
+		3BE1BFDF208CB03400AFEFAE /* UIView+TwitterCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1BFDE208CB03400AFEFAE /* UIView+TwitterCircle.swift */; };
+		3BE1BFE1208CCCF300AFEFAE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1BFE0208CCCF300AFEFAE /* BaseViewModel.swift */; };
+		3BE1BFE3208CD28D00AFEFAE /* UIViewController+BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1BFE2208CD28D00AFEFAE /* UIViewController+BaseViewModel.swift */; };
+		4A01700B209046C9002A39C1 /* UAObfuscatedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01700A209046C9002A39C1 /* UAObfuscatedString.swift */; };
+		4A313FB7207F23B600C453F6 /* AccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FB5207F23B600C453F6 /* AccountListViewController.swift */; };
+		4A313FBA207F23E000C453F6 /* AccountListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A313FB9207F23E000C453F6 /* AccountListViewController.storyboard */; };
+		4A313FBC207F26AF00C453F6 /* AccountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FBB207F26AF00C453F6 /* AccountListViewModel.swift */; };
+		4A313FBE207F32EB00C453F6 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FBD207F32EB00C453F6 /* UserRepository.swift */; };
+		4A313FC0207F331600C453F6 /* TKUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FBF207F331600C453F6 /* TKUserRepository.swift */; };
+		4A313FC4207F456100C453F6 /* UserLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FC3207F456100C453F6 /* UserLocalRepository.swift */; };
+		4A313FC6207F458100C453F6 /* RLMUserLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FC5207F458100C453F6 /* RLMUserLocalRepository.swift */; };
+		4A313FCC207F506A00C453F6 /* TwitterAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FCB207F506A00C453F6 /* TwitterAuthViewModel.swift */; };
+		4A313FCE207F659B00C453F6 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A313FCD207F659B00C453F6 /* SwiftyUserDefaults.framework */; };
+		4A313FDC2080920300C453F6 /* HistoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FDB2080920300C453F6 /* HistoryListViewController.swift */; };
+		4A313FDE2080921B00C453F6 /* HistoryListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A313FDD2080921B00C453F6 /* HistoryListViewController.storyboard */; };
+		4A313FE02080945000C453F6 /* HistoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FDF2080945000C453F6 /* HistoryListViewModel.swift */; };
+		4A313FE22080966000C453F6 /* RLMHistoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FE12080966000C453F6 /* RLMHistoryEntity.swift */; };
+		4A313FE4208097DE00C453F6 /* RLMHistoryLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FE3208097DE00C453F6 /* RLMHistoryLocalRepository.swift */; };
+		4A313FE6208097FA00C453F6 /* HistoryLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FE5208097FA00C453F6 /* HistoryLocalRepository.swift */; };
+		4A313FE92084357B00C453F6 /* TwitterKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FE82084357B00C453F6 /* TwitterKitManager.swift */; };
+		4A313FEB20843AA000C453F6 /* RLMSessionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FEA20843AA000C453F6 /* RLMSessionEntity.swift */; };
+		4A313FED20843C6F00C453F6 /* BaseSessionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FEC20843C6F00C453F6 /* BaseSessionDto.swift */; };
+		4A313FEF20843E0A00C453F6 /* RLMSessionLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FEE20843E0A00C453F6 /* RLMSessionLocalRepository.swift */; };
+		4A313FF120843F0900C453F6 /* SessionLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A313FF020843F0900C453F6 /* SessionLocalRepository.swift */; };
+		4A3A74CF20897046005CB13B /* MyCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A74CE20897046005CB13B /* MyCircleViewController.swift */; };
+		4A3A74D12089708F005CB13B /* MyCircleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A74D02089708F005CB13B /* MyCircleViewController.storyboard */; };
+		4A3A74D3208970DD005CB13B /* BaseCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A74D2208970DD005CB13B /* BaseCircleViewController.swift */; };
+		4A3A74D5208971FC005CB13B /* BaseCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A74D4208971FC005CB13B /* BaseCircleViewModel.swift */; };
+		4A3A74D720897CF8005CB13B /* MyCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A74D620897CF8005CB13B /* MyCircleViewModel.swift */; };
+		4A3A74E22089BECB005CB13B /* AddAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A74E12089BECB005CB13B /* AddAccountView.swift */; };
+		4A3A74E42089BEE6005CB13B /* AddAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A74E32089BEE6005CB13B /* AddAccountView.xib */; };
+		4A3A74E72089CBAE005CB13B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A74E62089CBAE005CB13B /* SettingViewController.swift */; };
+		4A3A74E92089CBC9005CB13B /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A74E82089CBC9005CB13B /* SettingViewController.storyboard */; };
+		4A3A74ED2089D570005CB13B /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A74EC2089D570005CB13B /* SettingCell.swift */; };
+		4A44F0E6208DA9F7001260D4 /* RetweetedStatusDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0E5208DA9F7001260D4 /* RetweetedStatusDto.swift */; };
+		4A44F0E8208DAA9D001260D4 /* RetweetedStatusDto+TwitterKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0E7208DAA9D001260D4 /* RetweetedStatusDto+TwitterKit.swift */; };
+		4A44F0EA208DAB78001260D4 /* RLMRetweetedStatusEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0E9208DAB78001260D4 /* RLMRetweetedStatusEntity.swift */; };
+		4A44F0EC208DAC0A001260D4 /* RLMRetweetedStatusEntity+RetweetedStatusDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0EB208DAC0A001260D4 /* RLMRetweetedStatusEntity+RetweetedStatusDto.swift */; };
+		4A44F0EE208DB9FF001260D4 /* MediaDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0ED208DB9FF001260D4 /* MediaDto.swift */; };
+		4A44F0F0208DBA51001260D4 /* MediaDto+TwitterKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0EF208DBA51001260D4 /* MediaDto+TwitterKit.swift */; };
+		4A44F0F2208DBAAB001260D4 /* RLMMediaEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0F1208DBAAB001260D4 /* RLMMediaEntity.swift */; };
+		4A44F0F4208DBB10001260D4 /* RLMMediaEntity+MediaDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0F3208DBB10001260D4 /* RLMMediaEntity+MediaDto.swift */; };
+		4A44F0F6208DBC40001260D4 /* ExtendedEntitiesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0F5208DBC40001260D4 /* ExtendedEntitiesDto.swift */; };
+		4A44F0F8208DBCDF001260D4 /* ExtendedEntitiesDto+TwitterKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0F7208DBCDF001260D4 /* ExtendedEntitiesDto+TwitterKit.swift */; };
+		4A44F0FA208DBE0C001260D4 /* RLMExtendedEntitiesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0F9208DBE0C001260D4 /* RLMExtendedEntitiesEntity.swift */; };
+		4A44F0FC208DBFAB001260D4 /* RLMExtendedEntitiesEntity+ExtendedEntitiesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0FB208DBFAB001260D4 /* RLMExtendedEntitiesEntity+ExtendedEntitiesDto.swift */; };
+		4A44F0FF208DD7BD001260D4 /* ImageMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F0FE208DD7BD001260D4 /* ImageMediaViewController.swift */; };
+		4A44F101208DD7E0001260D4 /* ImageMediaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A44F100208DD7DF001260D4 /* ImageMediaViewController.storyboard */; };
+		4A44F103208EC55D001260D4 /* SizeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F102208EC55D001260D4 /* SizeDto.swift */; };
+		4A44F105208EC5B4001260D4 /* SizeDto+TwitterKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F104208EC5B4001260D4 /* SizeDto+TwitterKit.swift */; };
+		4A44F107208EC64E001260D4 /* RLMSizeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F106208EC64E001260D4 /* RLMSizeEntity.swift */; };
+		4A44F109208EC877001260D4 /* RLMSizeEntity+SizeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F108208EC877001260D4 /* RLMSizeEntity+SizeDto.swift */; };
+		4A44F10B208EC8FC001260D4 /* SizesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F10A208EC8FC001260D4 /* SizesDto.swift */; };
+		4A44F10D208EC93F001260D4 /* SizesDto+TwitterKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F10C208EC93F001260D4 /* SizesDto+TwitterKit.swift */; };
+		4A44F10F208EC997001260D4 /* RLMSizesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F10E208EC997001260D4 /* RLMSizesEntity.swift */; };
+		4A44F111208EC9E4001260D4 /* RLMSizesEntity+SizesDtop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F110208EC9E4001260D4 /* RLMSizesEntity+SizesDtop.swift */; };
+		4A8CBF6E208453F700CF2E85 /* RLMUserEntity+UserDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF6C208453F700CF2E85 /* RLMUserEntity+UserDto.swift */; };
+		4A8CBF6F208453F700CF2E85 /* RLMSessionEntity+SessionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF6D208453F700CF2E85 /* RLMSessionEntity+SessionDto.swift */; };
+		4A8CBF722084547700CF2E85 /* UserDto+TwitterKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF712084547700CF2E85 /* UserDto+TwitterKit.swift */; };
+		4A8CBF742084548E00CF2E85 /* TweetDto+TwitterKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF732084548E00CF2E85 /* TweetDto+TwitterKit.swift */; };
+		4A8CBF76208454BC00CF2E85 /* FriendResponseDto+TwitterKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF75208454BC00CF2E85 /* FriendResponseDto+TwitterKit.swift */; };
+		4A8CBF782084688500CF2E85 /* HistoryDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF772084688500CF2E85 /* HistoryDto.swift */; };
+		4A8CBF7A208468EC00CF2E85 /* RLMHistoryEntity+HistoryDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF79208468EC00CF2E85 /* RLMHistoryEntity+HistoryDto.swift */; };
+		4A8CBF7D20847A8800CF2E85 /* TKSessionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF7C20847A8800CF2E85 /* TKSessionEntity.swift */; };
+		4A8CBF7F20847D0A00CF2E85 /* TKSessionEntity+BaseSessionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF7E20847D0A00CF2E85 /* TKSessionEntity+BaseSessionDto.swift */; };
+		4A8CBF81208495A600CF2E85 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF80208495A600CF2E85 /* TabBarController.swift */; };
+		4A8CBF832084969700CF2E85 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF822084969700CF2E85 /* TabBarViewModel.swift */; };
+		4A8CBF862085857400CF2E85 /* RLMTweetEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF852085857400CF2E85 /* RLMTweetEntity.swift */; };
+		4A8CBF882085889F00CF2E85 /* RLMTweetLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF872085889F00CF2E85 /* RLMTweetLocalRepository.swift */; };
+		4A8CBF8F20858BCD00CF2E85 /* TweetLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF8E20858BCD00CF2E85 /* TweetLocalRepository.swift */; };
+		4A8CBF9120858DC500CF2E85 /* RLMTweetEntity+TweetDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF9020858DC500CF2E85 /* RLMTweetEntity+TweetDto.swift */; };
+		4A8CBF942085E18400CF2E85 /* DefaultsKeys+TwitterCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF932085E18400CF2E85 /* DefaultsKeys+TwitterCircle.swift */; };
+		4A8CBF972085E1DA00CF2E85 /* TKDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF962085E1DA00CF2E85 /* TKDateTransform.swift */; };
+		4A8CBF9A2085E7AE00CF2E85 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBF992085E7AE00CF2E85 /* SplashViewController.swift */; };
+		4A8CBF9C2085E7B500CF2E85 /* SplashViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8CBF9B2085E7B500CF2E85 /* SplashViewController.storyboard */; };
+		4A8CBFA02085ECFF00CF2E85 /* SwiftyGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8CBF9F2085ECFE00CF2E85 /* SwiftyGif.framework */; };
+		4A8CBFA72086D04E00CF2E85 /* RLMAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBFA62086D04E00CF2E85 /* RLMAccessor.swift */; };
+		4A8CBFA92087126600CF2E85 /* ReloadMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBFA82087126600CF2E85 /* ReloadMessageView.swift */; };
+		4A8CBFAD2087266400CF2E85 /* ToastSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8CBFAC2087266400CF2E85 /* ToastSwiftFramework.framework */; };
+		4A8CBFAF2087336800CF2E85 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8CBFAE2087336800CF2E85 /* Chameleon.framework */; };
+		4A8CBFB1208739C300CF2E85 /* String+TwitterCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8CBFB0208739C300CF2E85 /* String+TwitterCircle.swift */; };
+		4A8CBFC120874E4400CF2E85 /* splash_icon@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4A8CBFBF20874E4400CF2E85 /* splash_icon@2x.gif */; };
+		4A8CBFC220874E4400CF2E85 /* splash_icon@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4A8CBFC020874E4400CF2E85 /* splash_icon@3x.gif */; };
+		4A964B57207DF59C00166A89 /* RLMFriendLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A964B56207DF59C00166A89 /* RLMFriendLocalRepository.swift */; };
+		4A964B5A207DF62800166A89 /* RLMFriendResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A964B59207DF62800166A89 /* RLMFriendResponseEntity.swift */; };
+		4A964B5C207DF6F000166A89 /* RLMUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A964B5B207DF6F000166A89 /* RLMUserEntity.swift */; };
+		4A964B5E207E09B700166A89 /* FriendLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A964B5D207E09B700166A89 /* FriendLocalRepository.swift */; };
+		4A964B61207E154000166A89 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A964B5F207E154000166A89 /* RealmSwift.framework */; };
+		4A964B62207E154000166A89 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A964B60207E154000166A89 /* Realm.framework */; };
+		4AE2BDC72088261000DE603D /* UIColor+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2BDC62088261000DE603D /* UIColor+UIImage.swift */; };
+		4AE2BDC920882D8200DE603D /* UIButton+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2BDC820882D8200DE603D /* UIButton+UIColor.swift */; };
+		4AE2DEED207C9DAF006035B4 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE2DEEC207C9DAF006035B4 /* XCGLogger.framework */; };
+		4AE2DEEF207CA138006035B4 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE2DEEE207CA138006035B4 /* ObjcExceptionBridging.framework */; };
+		4AE2DEF1207CB570006035B4 /* FontAwesomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE2DEF0207CB570006035B4 /* FontAwesomeKit.framework */; };
+		4AE2DEF3207CB718006035B4 /* DateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2DEF2207CB718006035B4 /* DateButton.swift */; };
+		4AE2DEF5207DB219006035B4 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE2DEF4207DB219006035B4 /* MBProgressHUD.framework */; };
+		4AE2DEF7207DD388006035B4 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE2DEF6207DD388006035B4 /* FSCalendar.framework */; };
+		4AE2DEF9207DE067006035B4 /* CalculateCalendarLogic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE2DEF8207DE067006035B4 /* CalculateCalendarLogic.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B777CC42071435F00C6363F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B777CA72071435E00C6363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B777CAE2071435F00C6363F;
+			remoteInfo = TwitterCircle;
+		};
+		3B777CCF2071435F00C6363F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B777CA72071435E00C6363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B777CAE2071435F00C6363F;
+			remoteInfo = TwitterCircle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B777CAF2071435F00C6363F /* TwitterCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B777CB22071435F00C6363F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B777CB92071435F00C6363F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B777CBC2071435F00C6363F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B777CBE2071435F00C6363F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B777CC32071435F00C6363F /* TwitterCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B777CC72071435F00C6363F /* TwitterCircleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCircleTests.swift; sourceTree = "<group>"; };
+		3B777CC92071435F00C6363F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B777CCE2071435F00C6363F /* TwitterCircleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterCircleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B777CD22071435F00C6363F /* TwitterCircleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCircleUITests.swift; sourceTree = "<group>"; };
+		3B777CD42071435F00C6363F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B777CE02072886000C6363F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		3B777CE22072888C00C6363F /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		3B777CE420728A6000C6363F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		3B777CE72072918000C6363F /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = Carthage/Build/iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		3B777CE82072918000C6363F /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = Carthage/Build/iOS/TwitterKit.framework; sourceTree = "<group>"; };
+		3B777CE92072918000C6363F /* TwitterShareExtensionUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterShareExtensionUI.framework; path = Carthage/Build/iOS/TwitterShareExtensionUI.framework; sourceTree = "<group>"; };
+		3B777CFA2076536300C6363F /* VendorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorInfo.swift; sourceTree = "<group>"; };
+		3B777CFD2076560400C6363F /* TwitterAuthViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwitterAuthViewController.storyboard; sourceTree = "<group>"; };
+		3B777CFE2076560400C6363F /* TwitterAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAuthViewController.swift; sourceTree = "<group>"; };
+		3B777D1920765A1B00C6363F /* Double+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+String.swift"; sourceTree = "<group>"; };
+		3B777D1A20765A1B00C6363F /* Int64+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int64+String.swift"; sourceTree = "<group>"; };
+		3B777D1B20765A1B00C6363F /* Notification+Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+Base.swift"; sourceTree = "<group>"; };
+		3B777D1C20765A1B00C6363F /* Notification+UIKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+UIKeyboard.swift"; sourceTree = "<group>"; };
+		3B777D1D20765A1B00C6363F /* NSObject+Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Base.swift"; sourceTree = "<group>"; };
+		3B777D1E20765A1B00C6363F /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		3B777D1F20765A1B00C6363F /* UIButton+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Localized.swift"; sourceTree = "<group>"; };
+		3B777D2020765A1B00C6363F /* UIColor+255.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+255.swift"; sourceTree = "<group>"; };
+		3B777D2120765A1B00C6363F /* UILabel+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Localized.swift"; sourceTree = "<group>"; };
+		3B777D2220765A1B00C6363F /* UINavigationController+Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Transition.swift"; sourceTree = "<group>"; };
+		3B777D2320765A1B00C6363F /* UITableView+Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Base.swift"; sourceTree = "<group>"; };
+		3B777D2420765A1B00C6363F /* UIView+Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Base.swift"; sourceTree = "<group>"; };
+		3B777D2520765A1B00C6363F /* UIViewController+Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Base.swift"; sourceTree = "<group>"; };
+		3B777D2620765A1B00C6363F /* URL+Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Base.swift"; sourceTree = "<group>"; };
+		3B777D6C20765D7900C6363F /* FollowListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowListViewController.swift; sourceTree = "<group>"; };
+		3B777D6E20765D8600C6363F /* FollowListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FollowListViewController.storyboard; sourceTree = "<group>"; };
+		3B777D7D20767E1D00C6363F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		3B777D7E20767E1D00C6363F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		3B777D822077B22F00C6363F /* FriendRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendRepository.swift; sourceTree = "<group>"; };
+		3B777D852077B22F00C6363F /* SessionDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDto.swift; sourceTree = "<group>"; };
+		3B777D882077B22F00C6363F /* TKFriendRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKFriendRepository.swift; sourceTree = "<group>"; };
+		3B777D8F2077B7CE00C6363F /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		3B777D9A2077D36A00C6363F /* FriendResponseDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendResponseDto.swift; sourceTree = "<group>"; };
+		3B777DA32078578800C6363F /* UserDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDto.swift; sourceTree = "<group>"; };
+		3B777DA520785EFB00C6363F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		3B777DA82078B20500C6363F /* FollowListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowListViewModel.swift; sourceTree = "<group>"; };
+		3B777DAC2078CA7600C6363F /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		3B777DAD2078CA7600C6363F /* UserListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListCell.xib; sourceTree = "<group>"; };
+		3B777DB02078D51400C6363F /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
+		3B777DD4207918CE00C6363F /* NextLoaderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLoaderTableView.swift; sourceTree = "<group>"; };
+		3B777DD72079B0E200C6363F /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
+		3B777DD92079B11A00C6363F /* CircleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CircleViewController.storyboard; sourceTree = "<group>"; };
+		3B777DDE2079D38200C6363F /* UserTimelineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTimelineRepository.swift; sourceTree = "<group>"; };
+		3B777DE02079D41400C6363F /* TKUserTimelineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKUserTimelineRepository.swift; sourceTree = "<group>"; };
+		3B777DE32079D9CC00C6363F /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		3BE1BFBC2079FAB300AFEFAE /* CircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
+		3BE1BFBE2079FC1900AFEFAE /* TweetDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDto.swift; sourceTree = "<group>"; };
+		3BE1BFC4207A1D2E00AFEFAE /* CircleDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleDate.swift; sourceTree = "<group>"; };
+		3BE1BFC6207A3E7500AFEFAE /* RxOptional.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxOptional.framework; path = Carthage/Build/iOS/RxOptional.framework; sourceTree = "<group>"; };
+		3BE1BFC8207A4D4600AFEFAE /* TKBaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKBaseRepository.swift; sourceTree = "<group>"; };
+		3BE1BFCA207A50E200AFEFAE /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		3BE1BFCC207BA9CA00AFEFAE /* CGFloat+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Math.swift"; sourceTree = "<group>"; };
+		3BE1BFCE207BAE4D00AFEFAE /* Double+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Math.swift"; sourceTree = "<group>"; };
+		3BE1BFDA207BB87400AFEFAE /* TweetListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetListCell.swift; sourceTree = "<group>"; };
+		3BE1BFDB207BB87400AFEFAE /* TweetListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetListCell.xib; sourceTree = "<group>"; };
+		3BE1BFDE208CB03400AFEFAE /* UIView+TwitterCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TwitterCircle.swift"; sourceTree = "<group>"; };
+		3BE1BFE0208CCCF300AFEFAE /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		3BE1BFE2208CD28D00AFEFAE /* UIViewController+BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BaseViewModel.swift"; sourceTree = "<group>"; };
+		4A01700A209046C9002A39C1 /* UAObfuscatedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAObfuscatedString.swift; sourceTree = "<group>"; };
+		4A313FB5207F23B600C453F6 /* AccountListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewController.swift; sourceTree = "<group>"; };
+		4A313FB9207F23E000C453F6 /* AccountListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountListViewController.storyboard; sourceTree = "<group>"; };
+		4A313FBB207F26AF00C453F6 /* AccountListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewModel.swift; sourceTree = "<group>"; };
+		4A313FBD207F32EB00C453F6 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		4A313FBF207F331600C453F6 /* TKUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKUserRepository.swift; sourceTree = "<group>"; };
+		4A313FC3207F456100C453F6 /* UserLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalRepository.swift; sourceTree = "<group>"; };
+		4A313FC5207F458100C453F6 /* RLMUserLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMUserLocalRepository.swift; sourceTree = "<group>"; };
+		4A313FCB207F506A00C453F6 /* TwitterAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthViewModel.swift; sourceTree = "<group>"; };
+		4A313FCD207F659B00C453F6 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
+		4A313FDB2080920300C453F6 /* HistoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListViewController.swift; sourceTree = "<group>"; };
+		4A313FDD2080921B00C453F6 /* HistoryListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HistoryListViewController.storyboard; sourceTree = "<group>"; };
+		4A313FDF2080945000C453F6 /* HistoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListViewModel.swift; sourceTree = "<group>"; };
+		4A313FE12080966000C453F6 /* RLMHistoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMHistoryEntity.swift; sourceTree = "<group>"; };
+		4A313FE3208097DE00C453F6 /* RLMHistoryLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMHistoryLocalRepository.swift; sourceTree = "<group>"; };
+		4A313FE5208097FA00C453F6 /* HistoryLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLocalRepository.swift; sourceTree = "<group>"; };
+		4A313FE82084357B00C453F6 /* TwitterKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterKitManager.swift; sourceTree = "<group>"; };
+		4A313FEA20843AA000C453F6 /* RLMSessionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMSessionEntity.swift; sourceTree = "<group>"; };
+		4A313FEC20843C6F00C453F6 /* BaseSessionDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSessionDto.swift; sourceTree = "<group>"; };
+		4A313FEE20843E0A00C453F6 /* RLMSessionLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMSessionLocalRepository.swift; sourceTree = "<group>"; };
+		4A313FF020843F0900C453F6 /* SessionLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLocalRepository.swift; sourceTree = "<group>"; };
+		4A3A74CE20897046005CB13B /* MyCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCircleViewController.swift; sourceTree = "<group>"; };
+		4A3A74D02089708F005CB13B /* MyCircleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyCircleViewController.storyboard; sourceTree = "<group>"; };
+		4A3A74D2208970DD005CB13B /* BaseCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCircleViewController.swift; sourceTree = "<group>"; };
+		4A3A74D4208971FC005CB13B /* BaseCircleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCircleViewModel.swift; sourceTree = "<group>"; };
+		4A3A74D620897CF8005CB13B /* MyCircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCircleViewModel.swift; sourceTree = "<group>"; };
+		4A3A74E12089BECB005CB13B /* AddAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountView.swift; sourceTree = "<group>"; };
+		4A3A74E32089BEE6005CB13B /* AddAccountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAccountView.xib; sourceTree = "<group>"; };
+		4A3A74E62089CBAE005CB13B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		4A3A74E82089CBC9005CB13B /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
+		4A3A74EC2089D570005CB13B /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		4A44F0E5208DA9F7001260D4 /* RetweetedStatusDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetweetedStatusDto.swift; sourceTree = "<group>"; };
+		4A44F0E7208DAA9D001260D4 /* RetweetedStatusDto+TwitterKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RetweetedStatusDto+TwitterKit.swift"; sourceTree = "<group>"; };
+		4A44F0E9208DAB78001260D4 /* RLMRetweetedStatusEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMRetweetedStatusEntity.swift; sourceTree = "<group>"; };
+		4A44F0EB208DAC0A001260D4 /* RLMRetweetedStatusEntity+RetweetedStatusDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RLMRetweetedStatusEntity+RetweetedStatusDto.swift"; sourceTree = "<group>"; };
+		4A44F0ED208DB9FF001260D4 /* MediaDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDto.swift; sourceTree = "<group>"; };
+		4A44F0EF208DBA51001260D4 /* MediaDto+TwitterKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MediaDto+TwitterKit.swift"; sourceTree = "<group>"; };
+		4A44F0F1208DBAAB001260D4 /* RLMMediaEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMMediaEntity.swift; sourceTree = "<group>"; };
+		4A44F0F3208DBB10001260D4 /* RLMMediaEntity+MediaDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RLMMediaEntity+MediaDto.swift"; sourceTree = "<group>"; };
+		4A44F0F5208DBC40001260D4 /* ExtendedEntitiesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedEntitiesDto.swift; sourceTree = "<group>"; };
+		4A44F0F7208DBCDF001260D4 /* ExtendedEntitiesDto+TwitterKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtendedEntitiesDto+TwitterKit.swift"; sourceTree = "<group>"; };
+		4A44F0F9208DBE0C001260D4 /* RLMExtendedEntitiesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMExtendedEntitiesEntity.swift; sourceTree = "<group>"; };
+		4A44F0FB208DBFAB001260D4 /* RLMExtendedEntitiesEntity+ExtendedEntitiesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RLMExtendedEntitiesEntity+ExtendedEntitiesDto.swift"; sourceTree = "<group>"; };
+		4A44F0FE208DD7BD001260D4 /* ImageMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMediaViewController.swift; sourceTree = "<group>"; };
+		4A44F100208DD7DF001260D4 /* ImageMediaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageMediaViewController.storyboard; sourceTree = "<group>"; };
+		4A44F102208EC55D001260D4 /* SizeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeDto.swift; sourceTree = "<group>"; };
+		4A44F104208EC5B4001260D4 /* SizeDto+TwitterKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SizeDto+TwitterKit.swift"; sourceTree = "<group>"; };
+		4A44F106208EC64E001260D4 /* RLMSizeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMSizeEntity.swift; sourceTree = "<group>"; };
+		4A44F108208EC877001260D4 /* RLMSizeEntity+SizeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RLMSizeEntity+SizeDto.swift"; sourceTree = "<group>"; };
+		4A44F10A208EC8FC001260D4 /* SizesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizesDto.swift; sourceTree = "<group>"; };
+		4A44F10C208EC93F001260D4 /* SizesDto+TwitterKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SizesDto+TwitterKit.swift"; sourceTree = "<group>"; };
+		4A44F10E208EC997001260D4 /* RLMSizesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMSizesEntity.swift; sourceTree = "<group>"; };
+		4A44F110208EC9E4001260D4 /* RLMSizesEntity+SizesDtop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RLMSizesEntity+SizesDtop.swift"; sourceTree = "<group>"; };
+		4A8CBF6C208453F700CF2E85 /* RLMUserEntity+UserDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RLMUserEntity+UserDto.swift"; sourceTree = "<group>"; };
+		4A8CBF6D208453F700CF2E85 /* RLMSessionEntity+SessionDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RLMSessionEntity+SessionDto.swift"; sourceTree = "<group>"; };
+		4A8CBF712084547700CF2E85 /* UserDto+TwitterKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDto+TwitterKit.swift"; sourceTree = "<group>"; };
+		4A8CBF732084548E00CF2E85 /* TweetDto+TwitterKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TweetDto+TwitterKit.swift"; sourceTree = "<group>"; };
+		4A8CBF75208454BC00CF2E85 /* FriendResponseDto+TwitterKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendResponseDto+TwitterKit.swift"; sourceTree = "<group>"; };
+		4A8CBF772084688500CF2E85 /* HistoryDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDto.swift; sourceTree = "<group>"; };
+		4A8CBF79208468EC00CF2E85 /* RLMHistoryEntity+HistoryDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RLMHistoryEntity+HistoryDto.swift"; sourceTree = "<group>"; };
+		4A8CBF7C20847A8800CF2E85 /* TKSessionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKSessionEntity.swift; sourceTree = "<group>"; };
+		4A8CBF7E20847D0A00CF2E85 /* TKSessionEntity+BaseSessionDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKSessionEntity+BaseSessionDto.swift"; sourceTree = "<group>"; };
+		4A8CBF80208495A600CF2E85 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4A8CBF822084969700CF2E85 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		4A8CBF852085857400CF2E85 /* RLMTweetEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMTweetEntity.swift; sourceTree = "<group>"; };
+		4A8CBF872085889F00CF2E85 /* RLMTweetLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMTweetLocalRepository.swift; sourceTree = "<group>"; };
+		4A8CBF8E20858BCD00CF2E85 /* TweetLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetLocalRepository.swift; sourceTree = "<group>"; };
+		4A8CBF9020858DC500CF2E85 /* RLMTweetEntity+TweetDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RLMTweetEntity+TweetDto.swift"; sourceTree = "<group>"; };
+		4A8CBF932085E18400CF2E85 /* DefaultsKeys+TwitterCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DefaultsKeys+TwitterCircle.swift"; sourceTree = "<group>"; };
+		4A8CBF962085E1DA00CF2E85 /* TKDateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKDateTransform.swift; sourceTree = "<group>"; };
+		4A8CBF992085E7AE00CF2E85 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4A8CBF9B2085E7B500CF2E85 /* SplashViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashViewController.storyboard; sourceTree = "<group>"; };
+		4A8CBF9F2085ECFE00CF2E85 /* SwiftyGif.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyGif.framework; path = Carthage/Build/iOS/SwiftyGif.framework; sourceTree = "<group>"; };
+		4A8CBFA62086D04E00CF2E85 /* RLMAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMAccessor.swift; sourceTree = "<group>"; };
+		4A8CBFA82087126600CF2E85 /* ReloadMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadMessageView.swift; sourceTree = "<group>"; };
+		4A8CBFAC2087266400CF2E85 /* ToastSwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToastSwiftFramework.framework; path = Carthage/Build/iOS/ToastSwiftFramework.framework; sourceTree = "<group>"; };
+		4A8CBFAE2087336800CF2E85 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
+		4A8CBFB0208739C300CF2E85 /* String+TwitterCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TwitterCircle.swift"; sourceTree = "<group>"; };
+		4A8CBFBF20874E4400CF2E85 /* splash_icon@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "splash_icon@2x.gif"; sourceTree = "<group>"; };
+		4A8CBFC020874E4400CF2E85 /* splash_icon@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "splash_icon@3x.gif"; sourceTree = "<group>"; };
+		4A964B56207DF59C00166A89 /* RLMFriendLocalRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMFriendLocalRepository.swift; sourceTree = "<group>"; };
+		4A964B59207DF62800166A89 /* RLMFriendResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMFriendResponseEntity.swift; sourceTree = "<group>"; };
+		4A964B5B207DF6F000166A89 /* RLMUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMUserEntity.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		4A964B5D207E09B700166A89 /* FriendLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendLocalRepository.swift; sourceTree = "<group>"; };
+		4A964B5F207E154000166A89 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		4A964B60207E154000166A89 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		4AE2BDC62088261000DE603D /* UIColor+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+UIImage.swift"; sourceTree = "<group>"; };
+		4AE2BDC820882D8200DE603D /* UIButton+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+UIColor.swift"; sourceTree = "<group>"; };
+		4AE2DEEC207C9DAF006035B4 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		4AE2DEEE207CA138006035B4 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = Carthage/Build/iOS/ObjcExceptionBridging.framework; sourceTree = "<group>"; };
+		4AE2DEF0207CB570006035B4 /* FontAwesomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesomeKit.framework; path = Carthage/Build/iOS/FontAwesomeKit.framework; sourceTree = "<group>"; };
+		4AE2DEF2207CB718006035B4 /* DateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButton.swift; sourceTree = "<group>"; };
+		4AE2DEF4207DB219006035B4 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = Carthage/Build/iOS/MBProgressHUD.framework; sourceTree = "<group>"; };
+		4AE2DEF6207DD388006035B4 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = "<group>"; };
+		4AE2DEF8207DE067006035B4 /* CalculateCalendarLogic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CalculateCalendarLogic.framework; path = Carthage/Build/iOS/CalculateCalendarLogic.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B777CAC2071435F00C6363F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8CBFA02085ECFF00CF2E85 /* SwiftyGif.framework in Frameworks */,
+				4A8CBFAF2087336800CF2E85 /* Chameleon.framework in Frameworks */,
+				4A8CBFAD2087266400CF2E85 /* ToastSwiftFramework.framework in Frameworks */,
+				4A313FCE207F659B00C453F6 /* SwiftyUserDefaults.framework in Frameworks */,
+				4A964B61207E154000166A89 /* RealmSwift.framework in Frameworks */,
+				4A964B62207E154000166A89 /* Realm.framework in Frameworks */,
+				4AE2DEF9207DE067006035B4 /* CalculateCalendarLogic.framework in Frameworks */,
+				4AE2DEF7207DD388006035B4 /* FSCalendar.framework in Frameworks */,
+				4AE2DEF5207DB219006035B4 /* MBProgressHUD.framework in Frameworks */,
+				4AE2DEF1207CB570006035B4 /* FontAwesomeKit.framework in Frameworks */,
+				4AE2DEEF207CA138006035B4 /* ObjcExceptionBridging.framework in Frameworks */,
+				4AE2DEED207C9DAF006035B4 /* XCGLogger.framework in Frameworks */,
+				3BE1BFC7207A3E7500AFEFAE /* RxOptional.framework in Frameworks */,
+				3B777DB12078D51500C6363F /* Nuke.framework in Frameworks */,
+				3B777DA620785EFC00C6363F /* Result.framework in Frameworks */,
+				3B777D902077B7CE00C6363F /* ObjectMapper.framework in Frameworks */,
+				3B777D7F20767E1D00C6363F /* RxSwift.framework in Frameworks */,
+				3B777D8020767E1D00C6363F /* RxCocoa.framework in Frameworks */,
+				3B777CEA2072918000C6363F /* TwitterCore.framework in Frameworks */,
+				3B777CEB2072918000C6363F /* TwitterKit.framework in Frameworks */,
+				3B777CEC2072918000C6363F /* TwitterShareExtensionUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B777CC02071435F00C6363F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B777CCB2071435F00C6363F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B777CA62071435E00C6363F = {
+			isa = PBXGroup;
+			children = (
+				3B777D0120765A1B00C6363F /* Vendor */,
+				3B777CB12071435F00C6363F /* TwitterCircle */,
+				3B777CC62071435F00C6363F /* TwitterCircleTests */,
+				3B777CD12071435F00C6363F /* TwitterCircleUITests */,
+				3B777CB02071435F00C6363F /* Products */,
+				3B777CE62072917F00C6363F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B777CB02071435F00C6363F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B777CAF2071435F00C6363F /* TwitterCircle.app */,
+				3B777CC32071435F00C6363F /* TwitterCircleTests.xctest */,
+				3B777CCE2071435F00C6363F /* TwitterCircleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B777CB12071435F00C6363F /* TwitterCircle */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CBF922085E18400CF2E85 /* Extension */,
+				3BE1BFC3207A1D2500AFEFAE /* Object */,
+				3B777D70207669CA00C6363F /* Repository */,
+				4A313FE72084356700C453F6 /* Manager */,
+				3B777CF92076534000C6363F /* Utility */,
+				3B777DAA2078CA3000C6363F /* View */,
+				3B777CF42073D22900C6363F /* ViewController */,
+				3B777DA72078728C00C6363F /* ViewModel */,
+				3B777CB22071435F00C6363F /* AppDelegate.swift */,
+				4A8CBFB82087432C00CF2E85 /* Resources */,
+				3B777CB92071435F00C6363F /* Assets.xcassets */,
+				3B777CBB2071435F00C6363F /* LaunchScreen.storyboard */,
+				3B777CBE2071435F00C6363F /* Info.plist */,
+				3B777CE420728A6000C6363F /* Settings.bundle */,
+				3B777CE02072886000C6363F /* Localizable.strings */,
+				3B777CE22072888C00C6363F /* InfoPlist.strings */,
+			);
+			path = TwitterCircle;
+			sourceTree = "<group>";
+		};
+		3B777CC62071435F00C6363F /* TwitterCircleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B777CC72071435F00C6363F /* TwitterCircleTests.swift */,
+				3B777CC92071435F00C6363F /* Info.plist */,
+			);
+			path = TwitterCircleTests;
+			sourceTree = "<group>";
+		};
+		3B777CD12071435F00C6363F /* TwitterCircleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B777CD22071435F00C6363F /* TwitterCircleUITests.swift */,
+				3B777CD42071435F00C6363F /* Info.plist */,
+			);
+			path = TwitterCircleUITests;
+			sourceTree = "<group>";
+		};
+		3B777CE62072917F00C6363F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CBF9F2085ECFE00CF2E85 /* SwiftyGif.framework */,
+				4A8CBFAE2087336800CF2E85 /* Chameleon.framework */,
+				4A8CBFAC2087266400CF2E85 /* ToastSwiftFramework.framework */,
+				4A313FCD207F659B00C453F6 /* SwiftyUserDefaults.framework */,
+				4A964B60207E154000166A89 /* Realm.framework */,
+				4A964B5F207E154000166A89 /* RealmSwift.framework */,
+				4AE2DEF8207DE067006035B4 /* CalculateCalendarLogic.framework */,
+				4AE2DEF6207DD388006035B4 /* FSCalendar.framework */,
+				4AE2DEF4207DB219006035B4 /* MBProgressHUD.framework */,
+				4AE2DEF0207CB570006035B4 /* FontAwesomeKit.framework */,
+				4AE2DEEE207CA138006035B4 /* ObjcExceptionBridging.framework */,
+				4AE2DEEC207C9DAF006035B4 /* XCGLogger.framework */,
+				3BE1BFC6207A3E7500AFEFAE /* RxOptional.framework */,
+				3B777DB02078D51400C6363F /* Nuke.framework */,
+				3B777DA520785EFB00C6363F /* Result.framework */,
+				3B777D8F2077B7CE00C6363F /* ObjectMapper.framework */,
+				3B777D7E20767E1D00C6363F /* RxCocoa.framework */,
+				3B777D7D20767E1D00C6363F /* RxSwift.framework */,
+				3B777CE72072918000C6363F /* TwitterCore.framework */,
+				3B777CE82072918000C6363F /* TwitterKit.framework */,
+				3B777CE92072918000C6363F /* TwitterShareExtensionUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B777CF42073D22900C6363F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CBF80208495A600CF2E85 /* TabBarController.swift */,
+				4A3A74D2208970DD005CB13B /* BaseCircleViewController.swift */,
+				4A8CBF982085E78B00CF2E85 /* Splash */,
+				3B777CFC2076560400C6363F /* TwitterAuth */,
+				4A3A74CD2089701C005CB13B /* MyCircle */,
+				4A44F0FD208DD79A001260D4 /* ImageMedia */,
+				3B777D6920765D4B00C6363F /* FollowList */,
+				4A313FDA208091E800C453F6 /* HistoryList */,
+				3B777DD62079B0A900C6363F /* Circle */,
+				4A313FB4207F239700C453F6 /* AccountList */,
+				4A3A74E52089CB8B005CB13B /* Setting */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3B777CF92076534000C6363F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3B777CFA2076536300C6363F /* VendorInfo.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3B777CFC2076560400C6363F /* TwitterAuth */ = {
+			isa = PBXGroup;
+			children = (
+				3B777CFE2076560400C6363F /* TwitterAuthViewController.swift */,
+				3B777CFD2076560400C6363F /* TwitterAuthViewController.storyboard */,
+			);
+			path = TwitterAuth;
+			sourceTree = "<group>";
+		};
+		3B777D0120765A1B00C6363F /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				4A017009209046C9002A39C1 /* UAObfuscatedString */,
+				3B777D0220765A1B00C6363F /* mn-D128Extension */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		3B777D0220765A1B00C6363F /* mn-D128Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3B777D1820765A1B00C6363F /* Extensions */,
+			);
+			path = "mn-D128Extension";
+			sourceTree = "<group>";
+		};
+		3B777D1820765A1B00C6363F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3BE1BFCC207BA9CA00AFEFAE /* CGFloat+Math.swift */,
+				3BE1BFCE207BAE4D00AFEFAE /* Double+Math.swift */,
+				3B777D1920765A1B00C6363F /* Double+String.swift */,
+				3B777D1A20765A1B00C6363F /* Int64+String.swift */,
+				3B777D1B20765A1B00C6363F /* Notification+Base.swift */,
+				3B777D1C20765A1B00C6363F /* Notification+UIKeyboard.swift */,
+				3B777D1D20765A1B00C6363F /* NSObject+Base.swift */,
+				3B777D1E20765A1B00C6363F /* String+Localized.swift */,
+				3B777D1F20765A1B00C6363F /* UIButton+Localized.swift */,
+				4AE2BDC820882D8200DE603D /* UIButton+UIColor.swift */,
+				3B777D2020765A1B00C6363F /* UIColor+255.swift */,
+				4AE2BDC62088261000DE603D /* UIColor+UIImage.swift */,
+				3B777D2120765A1B00C6363F /* UILabel+Localized.swift */,
+				3B777D2220765A1B00C6363F /* UINavigationController+Transition.swift */,
+				3B777D2320765A1B00C6363F /* UITableView+Base.swift */,
+				3B777D2420765A1B00C6363F /* UIView+Base.swift */,
+				3B777D2520765A1B00C6363F /* UIViewController+Base.swift */,
+				3B777D2620765A1B00C6363F /* URL+Base.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B777D6920765D4B00C6363F /* FollowList */ = {
+			isa = PBXGroup;
+			children = (
+				3B777D6C20765D7900C6363F /* FollowListViewController.swift */,
+				3B777D6E20765D8600C6363F /* FollowListViewController.storyboard */,
+			);
+			path = FollowList;
+			sourceTree = "<group>";
+		};
+		3B777D70207669CA00C6363F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3B777DE22079D9B700C6363F /* Enum */,
+				3B777D842077B22F00C6363F /* DTO */,
+				3B777D812077B22F00C6363F /* Protocol */,
+				3B777D862077B22F00C6363F /* TK */,
+				4A964B55207DF59C00166A89 /* RLM */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3B777D812077B22F00C6363F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4A313FBD207F32EB00C453F6 /* UserRepository.swift */,
+				3B777D822077B22F00C6363F /* FriendRepository.swift */,
+				3B777DDE2079D38200C6363F /* UserTimelineRepository.swift */,
+				4A964B5D207E09B700166A89 /* FriendLocalRepository.swift */,
+				4A313FC3207F456100C453F6 /* UserLocalRepository.swift */,
+				4A313FE5208097FA00C453F6 /* HistoryLocalRepository.swift */,
+				4A313FF020843F0900C453F6 /* SessionLocalRepository.swift */,
+				4A8CBF8E20858BCD00CF2E85 /* TweetLocalRepository.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3B777D842077B22F00C6363F /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				4A313FEC20843C6F00C453F6 /* BaseSessionDto.swift */,
+				4A44F0F5208DBC40001260D4 /* ExtendedEntitiesDto.swift */,
+				3B777D9A2077D36A00C6363F /* FriendResponseDto.swift */,
+				4A8CBF772084688500CF2E85 /* HistoryDto.swift */,
+				4A44F0ED208DB9FF001260D4 /* MediaDto.swift */,
+				4A44F0E5208DA9F7001260D4 /* RetweetedStatusDto.swift */,
+				3B777D852077B22F00C6363F /* SessionDto.swift */,
+				4A44F102208EC55D001260D4 /* SizeDto.swift */,
+				4A44F10A208EC8FC001260D4 /* SizesDto.swift */,
+				3BE1BFBE2079FC1900AFEFAE /* TweetDto.swift */,
+				3B777DA32078578800C6363F /* UserDto.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		3B777D862077B22F00C6363F /* TK */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CBF952085E1A600CF2E85 /* Utility */,
+				4A8CBF7B20847A7800CF2E85 /* Entity */,
+				4A8CBF702084547700CF2E85 /* Extension */,
+				3BE1BFC8207A4D4600AFEFAE /* TKBaseRepository.swift */,
+				4A313FBF207F331600C453F6 /* TKUserRepository.swift */,
+				3B777D882077B22F00C6363F /* TKFriendRepository.swift */,
+				3B777DE02079D41400C6363F /* TKUserTimelineRepository.swift */,
+			);
+			path = TK;
+			sourceTree = "<group>";
+		};
+		3B777DA72078728C00C6363F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BE1BFE0208CCCF300AFEFAE /* BaseViewModel.swift */,
+				4A8CBF822084969700CF2E85 /* TabBarViewModel.swift */,
+				4A313FCB207F506A00C453F6 /* TwitterAuthViewModel.swift */,
+				3B777DA82078B20500C6363F /* FollowListViewModel.swift */,
+				4A313FDF2080945000C453F6 /* HistoryListViewModel.swift */,
+				4A3A74D4208971FC005CB13B /* BaseCircleViewModel.swift */,
+				4A3A74D620897CF8005CB13B /* MyCircleViewModel.swift */,
+				3BE1BFBC2079FAB300AFEFAE /* CircleViewModel.swift */,
+				4A313FBB207F26AF00C453F6 /* AccountListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B777DAA2078CA3000C6363F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B777DD3207918B900C6363F /* View */,
+				3B777DAB2078CA3000C6363F /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B777DAB2078CA3000C6363F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3B777DAC2078CA7600C6363F /* UserListCell.swift */,
+				3B777DAD2078CA7600C6363F /* UserListCell.xib */,
+				3BE1BFDA207BB87400AFEFAE /* TweetListCell.swift */,
+				3BE1BFDB207BB87400AFEFAE /* TweetListCell.xib */,
+				4A3A74EC2089D570005CB13B /* SettingCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3B777DD3207918B900C6363F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B777DD4207918CE00C6363F /* NextLoaderTableView.swift */,
+				3BE1BFCA207A50E200AFEFAE /* PieChartView.swift */,
+				4AE2DEF2207CB718006035B4 /* DateButton.swift */,
+				4A8CBFA82087126600CF2E85 /* ReloadMessageView.swift */,
+				4A3A74E12089BECB005CB13B /* AddAccountView.swift */,
+				4A3A74E32089BEE6005CB13B /* AddAccountView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B777DD62079B0A900C6363F /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				3B777DD72079B0E200C6363F /* CircleViewController.swift */,
+				3B777DD92079B11A00C6363F /* CircleViewController.storyboard */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		3B777DE22079D9B700C6363F /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				3B777DE32079D9CC00C6363F /* ResponseError.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		3BE1BFC3207A1D2500AFEFAE /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				3BE1BFC4207A1D2E00AFEFAE /* CircleDate.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		4A017009209046C9002A39C1 /* UAObfuscatedString */ = {
+			isa = PBXGroup;
+			children = (
+				4A01700A209046C9002A39C1 /* UAObfuscatedString.swift */,
+			);
+			path = UAObfuscatedString;
+			sourceTree = "<group>";
+		};
+		4A313FB4207F239700C453F6 /* AccountList */ = {
+			isa = PBXGroup;
+			children = (
+				4A313FB5207F23B600C453F6 /* AccountListViewController.swift */,
+				4A313FB9207F23E000C453F6 /* AccountListViewController.storyboard */,
+			);
+			path = AccountList;
+			sourceTree = "<group>";
+		};
+		4A313FDA208091E800C453F6 /* HistoryList */ = {
+			isa = PBXGroup;
+			children = (
+				4A313FDB2080920300C453F6 /* HistoryListViewController.swift */,
+				4A313FDD2080921B00C453F6 /* HistoryListViewController.storyboard */,
+			);
+			path = HistoryList;
+			sourceTree = "<group>";
+		};
+		4A313FE72084356700C453F6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4A313FE82084357B00C453F6 /* TwitterKitManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4A3A74CD2089701C005CB13B /* MyCircle */ = {
+			isa = PBXGroup;
+			children = (
+				4A3A74CE20897046005CB13B /* MyCircleViewController.swift */,
+				4A3A74D02089708F005CB13B /* MyCircleViewController.storyboard */,
+			);
+			path = MyCircle;
+			sourceTree = "<group>";
+		};
+		4A3A74E52089CB8B005CB13B /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4A3A74E62089CBAE005CB13B /* SettingViewController.swift */,
+				4A3A74E82089CBC9005CB13B /* SettingViewController.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		4A44F0FD208DD79A001260D4 /* ImageMedia */ = {
+			isa = PBXGroup;
+			children = (
+				4A44F0FE208DD7BD001260D4 /* ImageMediaViewController.swift */,
+				4A44F100208DD7DF001260D4 /* ImageMediaViewController.storyboard */,
+			);
+			path = ImageMedia;
+			sourceTree = "<group>";
+		};
+		4A8CBF6B208453F700CF2E85 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4A44F0FB208DBFAB001260D4 /* RLMExtendedEntitiesEntity+ExtendedEntitiesDto.swift */,
+				4A8CBF79208468EC00CF2E85 /* RLMHistoryEntity+HistoryDto.swift */,
+				4A44F0F3208DBB10001260D4 /* RLMMediaEntity+MediaDto.swift */,
+				4A44F0EB208DAC0A001260D4 /* RLMRetweetedStatusEntity+RetweetedStatusDto.swift */,
+				4A8CBF6D208453F700CF2E85 /* RLMSessionEntity+SessionDto.swift */,
+				4A44F108208EC877001260D4 /* RLMSizeEntity+SizeDto.swift */,
+				4A44F110208EC9E4001260D4 /* RLMSizesEntity+SizesDtop.swift */,
+				4A8CBF9020858DC500CF2E85 /* RLMTweetEntity+TweetDto.swift */,
+				4A8CBF6C208453F700CF2E85 /* RLMUserEntity+UserDto.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4A8CBF702084547700CF2E85 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4A44F0F7208DBCDF001260D4 /* ExtendedEntitiesDto+TwitterKit.swift */,
+				4A8CBF75208454BC00CF2E85 /* FriendResponseDto+TwitterKit.swift */,
+				4A44F0EF208DBA51001260D4 /* MediaDto+TwitterKit.swift */,
+				4A44F0E7208DAA9D001260D4 /* RetweetedStatusDto+TwitterKit.swift */,
+				4A44F104208EC5B4001260D4 /* SizeDto+TwitterKit.swift */,
+				4A44F10C208EC93F001260D4 /* SizesDto+TwitterKit.swift */,
+				4A8CBF7E20847D0A00CF2E85 /* TKSessionEntity+BaseSessionDto.swift */,
+				4A8CBF732084548E00CF2E85 /* TweetDto+TwitterKit.swift */,
+				4A8CBF712084547700CF2E85 /* UserDto+TwitterKit.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4A8CBF7B20847A7800CF2E85 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CBF7C20847A8800CF2E85 /* TKSessionEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4A8CBF922085E18400CF2E85 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CBF932085E18400CF2E85 /* DefaultsKeys+TwitterCircle.swift */,
+				4A8CBFB0208739C300CF2E85 /* String+TwitterCircle.swift */,
+				3BE1BFDE208CB03400AFEFAE /* UIView+TwitterCircle.swift */,
+				3BE1BFE2208CD28D00AFEFAE /* UIViewController+BaseViewModel.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4A8CBF952085E1A600CF2E85 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CBF962085E1DA00CF2E85 /* TKDateTransform.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4A8CBF982085E78B00CF2E85 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CBF992085E7AE00CF2E85 /* SplashViewController.swift */,
+				4A8CBF9B2085E7B500CF2E85 /* SplashViewController.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		4A8CBFA52086D03900CF2E85 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CBFA62086D04E00CF2E85 /* RLMAccessor.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4A8CBFB82087432C00CF2E85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CBFBF20874E4400CF2E85 /* splash_icon@2x.gif */,
+				4A8CBFC020874E4400CF2E85 /* splash_icon@3x.gif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4A964B55207DF59C00166A89 /* RLM */ = {
+			isa = PBXGroup;
+			children = (
+				4A8CBFA52086D03900CF2E85 /* Utility */,
+				4A964B58207DF60200166A89 /* Entity */,
+				4A8CBF6B208453F700CF2E85 /* Extension */,
+				4A964B56207DF59C00166A89 /* RLMFriendLocalRepository.swift */,
+				4A313FC5207F458100C453F6 /* RLMUserLocalRepository.swift */,
+				4A313FE3208097DE00C453F6 /* RLMHistoryLocalRepository.swift */,
+				4A313FEE20843E0A00C453F6 /* RLMSessionLocalRepository.swift */,
+				4A8CBF872085889F00CF2E85 /* RLMTweetLocalRepository.swift */,
+			);
+			path = RLM;
+			sourceTree = "<group>";
+		};
+		4A964B58207DF60200166A89 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4A44F0F9208DBE0C001260D4 /* RLMExtendedEntitiesEntity.swift */,
+				4A964B59207DF62800166A89 /* RLMFriendResponseEntity.swift */,
+				4A313FE12080966000C453F6 /* RLMHistoryEntity.swift */,
+				4A44F0F1208DBAAB001260D4 /* RLMMediaEntity.swift */,
+				4A44F0E9208DAB78001260D4 /* RLMRetweetedStatusEntity.swift */,
+				4A313FEA20843AA000C453F6 /* RLMSessionEntity.swift */,
+				4A44F106208EC64E001260D4 /* RLMSizeEntity.swift */,
+				4A44F10E208EC997001260D4 /* RLMSizesEntity.swift */,
+				4A8CBF852085857400CF2E85 /* RLMTweetEntity.swift */,
+				4A964B5B207DF6F000166A89 /* RLMUserEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B777CAE2071435F00C6363F /* TwitterCircle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B777CD72071435F00C6363F /* Build configuration list for PBXNativeTarget "TwitterCircle" */;
+			buildPhases = (
+				3B777CAB2071435F00C6363F /* Sources */,
+				3B777CAC2071435F00C6363F /* Frameworks */,
+				3B777CAD2071435F00C6363F /* Resources */,
+				3B777CED2072919500C6363F /* Carthage */,
+				4A8CBF842084A30E00CF2E85 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterCircle;
+			productName = TwitterCircle;
+			productReference = 3B777CAF2071435F00C6363F /* TwitterCircle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B777CC22071435F00C6363F /* TwitterCircleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B777CDA2071435F00C6363F /* Build configuration list for PBXNativeTarget "TwitterCircleTests" */;
+			buildPhases = (
+				3B777CBF2071435F00C6363F /* Sources */,
+				3B777CC02071435F00C6363F /* Frameworks */,
+				3B777CC12071435F00C6363F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B777CC52071435F00C6363F /* PBXTargetDependency */,
+			);
+			name = TwitterCircleTests;
+			productName = TwitterCircleTests;
+			productReference = 3B777CC32071435F00C6363F /* TwitterCircleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B777CCD2071435F00C6363F /* TwitterCircleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B777CDD2071435F00C6363F /* Build configuration list for PBXNativeTarget "TwitterCircleUITests" */;
+			buildPhases = (
+				3B777CCA2071435F00C6363F /* Sources */,
+				3B777CCB2071435F00C6363F /* Frameworks */,
+				3B777CCC2071435F00C6363F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B777CD02071435F00C6363F /* PBXTargetDependency */,
+			);
+			name = TwitterCircleUITests;
+			productName = TwitterCircleUITests;
+			productReference = 3B777CCE2071435F00C6363F /* TwitterCircleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B777CA72071435E00C6363F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "mn(D128)";
+				TargetAttributes = {
+					3B777CAE2071435F00C6363F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					3B777CC22071435F00C6363F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B777CAE2071435F00C6363F;
+					};
+					3B777CCD2071435F00C6363F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B777CAE2071435F00C6363F;
+					};
+				};
+			};
+			buildConfigurationList = 3B777CAA2071435E00C6363F /* Build configuration list for PBXProject "TwitterCircle" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B777CA62071435E00C6363F;
+			productRefGroup = 3B777CB02071435F00C6363F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B777CAE2071435F00C6363F /* TwitterCircle */,
+				3B777CC22071435F00C6363F /* TwitterCircleTests */,
+				3B777CCD2071435F00C6363F /* TwitterCircleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B777CAD2071435F00C6363F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3A74E92089CBC9005CB13B /* SettingViewController.storyboard in Resources */,
+				3B777CBD2071435F00C6363F /* LaunchScreen.storyboard in Resources */,
+				3BE1BFDD207BB87400AFEFAE /* TweetListCell.xib in Resources */,
+				3B777DDA2079B11A00C6363F /* CircleViewController.storyboard in Resources */,
+				3B777CE12072886000C6363F /* Localizable.strings in Resources */,
+				3B777DAF2078CA7600C6363F /* UserListCell.xib in Resources */,
+				3B777CBA2071435F00C6363F /* Assets.xcassets in Resources */,
+				3B777CFF2076560500C6363F /* TwitterAuthViewController.storyboard in Resources */,
+				4A8CBFC220874E4400CF2E85 /* splash_icon@3x.gif in Resources */,
+				3B777D6F20765D8600C6363F /* FollowListViewController.storyboard in Resources */,
+				4A8CBF9C2085E7B500CF2E85 /* SplashViewController.storyboard in Resources */,
+				4A313FDE2080921B00C453F6 /* HistoryListViewController.storyboard in Resources */,
+				3B777CE520728A6000C6363F /* Settings.bundle in Resources */,
+				4A8CBFC120874E4400CF2E85 /* splash_icon@2x.gif in Resources */,
+				4A3A74D12089708F005CB13B /* MyCircleViewController.storyboard in Resources */,
+				3B777CE32072888C00C6363F /* InfoPlist.strings in Resources */,
+				4A3A74E42089BEE6005CB13B /* AddAccountView.xib in Resources */,
+				4A313FBA207F23E000C453F6 /* AccountListViewController.storyboard in Resources */,
+				4A44F101208DD7E0001260D4 /* ImageMediaViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B777CC12071435F00C6363F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B777CCC2071435F00C6363F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B777CED2072919500C6363F /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterShareExtensionUI.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxOptional.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjcExceptionBridging.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FontAwesomeKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MBProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FSCalendar.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CalculateCalendarLogic.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyGif.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ToastSwiftFramework.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		4A8CBF842084A30E00CF2E85 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Debug\" ]; then\n\nif which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B777CAB2071435F00C6363F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A44F0EE208DB9FF001260D4 /* MediaDto.swift in Sources */,
+				3BE1BFBF2079FC1900AFEFAE /* TweetDto.swift in Sources */,
+				4A44F0F8208DBCDF001260D4 /* ExtendedEntitiesDto+TwitterKit.swift in Sources */,
+				4A313FCC207F506A00C453F6 /* TwitterAuthViewModel.swift in Sources */,
+				4A313FEF20843E0A00C453F6 /* RLMSessionLocalRepository.swift in Sources */,
+				4A44F0F4208DBB10001260D4 /* RLMMediaEntity+MediaDto.swift in Sources */,
+				4A44F0FC208DBFAB001260D4 /* RLMExtendedEntitiesEntity+ExtendedEntitiesDto.swift in Sources */,
+				4A313FE02080945000C453F6 /* HistoryListViewModel.swift in Sources */,
+				4A313FB7207F23B600C453F6 /* AccountListViewController.swift in Sources */,
+				3B777D5920765A1C00C6363F /* URL+Base.swift in Sources */,
+				4A8CBF782084688500CF2E85 /* HistoryDto.swift in Sources */,
+				4A313FDC2080920300C453F6 /* HistoryListViewController.swift in Sources */,
+				4A3A74ED2089D570005CB13B /* SettingCell.swift in Sources */,
+				4A8CBF7D20847A8800CF2E85 /* TKSessionEntity.swift in Sources */,
+				3B777D5520765A1C00C6363F /* UINavigationController+Transition.swift in Sources */,
+				4A313FE92084357B00C453F6 /* TwitterKitManager.swift in Sources */,
+				4A8CBF882085889F00CF2E85 /* RLMTweetLocalRepository.swift in Sources */,
+				4A8CBFB1208739C300CF2E85 /* String+TwitterCircle.swift in Sources */,
+				3B777D5320765A1C00C6363F /* UIColor+255.swift in Sources */,
+				4A313FEB20843AA000C453F6 /* RLMSessionEntity.swift in Sources */,
+				4A3A74D5208971FC005CB13B /* BaseCircleViewModel.swift in Sources */,
+				4A44F0E6208DA9F7001260D4 /* RetweetedStatusDto.swift in Sources */,
+				3B777D6D20765D7900C6363F /* FollowListViewController.swift in Sources */,
+				3BE1BFDF208CB03400AFEFAE /* UIView+TwitterCircle.swift in Sources */,
+				4A8CBF862085857400CF2E85 /* RLMTweetEntity.swift in Sources */,
+				4A8CBFA72086D04E00CF2E85 /* RLMAccessor.swift in Sources */,
+				4A8CBF832084969700CF2E85 /* TabBarViewModel.swift in Sources */,
+				3B777D8A2077B22F00C6363F /* FriendRepository.swift in Sources */,
+				4A964B5E207E09B700166A89 /* FriendLocalRepository.swift in Sources */,
+				4A8CBF972085E1DA00CF2E85 /* TKDateTransform.swift in Sources */,
+				3B777D9B2077D36A00C6363F /* FriendResponseDto.swift in Sources */,
+				3B777DE42079D9CC00C6363F /* ResponseError.swift in Sources */,
+				4A3A74D720897CF8005CB13B /* MyCircleViewModel.swift in Sources */,
+				4A8CBF6F208453F700CF2E85 /* RLMSessionEntity+SessionDto.swift in Sources */,
+				4A44F10B208EC8FC001260D4 /* SizesDto.swift in Sources */,
+				3B777D4E20765A1C00C6363F /* Notification+Base.swift in Sources */,
+				4A964B5C207DF6F000166A89 /* RLMUserEntity.swift in Sources */,
+				4A313FED20843C6F00C453F6 /* BaseSessionDto.swift in Sources */,
+				4A8CBF7F20847D0A00CF2E85 /* TKSessionEntity+BaseSessionDto.swift in Sources */,
+				3B777DDF2079D38200C6363F /* UserTimelineRepository.swift in Sources */,
+				4A44F0FF208DD7BD001260D4 /* ImageMediaViewController.swift in Sources */,
+				4A3A74E22089BECB005CB13B /* AddAccountView.swift in Sources */,
+				3B777DA92078B20500C6363F /* FollowListViewModel.swift in Sources */,
+				4A44F0FA208DBE0C001260D4 /* RLMExtendedEntitiesEntity.swift in Sources */,
+				4A313FC0207F331600C453F6 /* TKUserRepository.swift in Sources */,
+				4A44F0F0208DBA51001260D4 /* MediaDto+TwitterKit.swift in Sources */,
+				3BE1BFE3208CD28D00AFEFAE /* UIViewController+BaseViewModel.swift in Sources */,
+				3BE1BFE1208CCCF300AFEFAE /* BaseViewModel.swift in Sources */,
+				4A8CBF6E208453F700CF2E85 /* RLMUserEntity+UserDto.swift in Sources */,
+				4A313FBE207F32EB00C453F6 /* UserRepository.swift in Sources */,
+				3B777DA42078578800C6363F /* UserDto.swift in Sources */,
+				3BE1BFC5207A1D2E00AFEFAE /* CircleDate.swift in Sources */,
+				4A44F0F6208DBC40001260D4 /* ExtendedEntitiesDto.swift in Sources */,
+				3B777DD82079B0E200C6363F /* CircleViewController.swift in Sources */,
+				4A8CBF742084548E00CF2E85 /* TweetDto+TwitterKit.swift in Sources */,
+				3B777DAE2078CA7600C6363F /* UserListCell.swift in Sources */,
+				3BE1BFBD2079FAB300AFEFAE /* CircleViewModel.swift in Sources */,
+				4A313FE22080966000C453F6 /* RLMHistoryEntity.swift in Sources */,
+				4A8CBF942085E18400CF2E85 /* DefaultsKeys+TwitterCircle.swift in Sources */,
+				4A44F111208EC9E4001260D4 /* RLMSizesEntity+SizesDtop.swift in Sources */,
+				4AE2BDC920882D8200DE603D /* UIButton+UIColor.swift in Sources */,
+				3B777D4D20765A1C00C6363F /* Int64+String.swift in Sources */,
+				3B777D5120765A1C00C6363F /* String+Localized.swift in Sources */,
+				3B777D4C20765A1C00C6363F /* Double+String.swift in Sources */,
+				4A8CBF8F20858BCD00CF2E85 /* TweetLocalRepository.swift in Sources */,
+				3B777DD5207918CE00C6363F /* NextLoaderTableView.swift in Sources */,
+				3B777D5420765A1C00C6363F /* UILabel+Localized.swift in Sources */,
+				4A313FE4208097DE00C453F6 /* RLMHistoryLocalRepository.swift in Sources */,
+				4A8CBF722084547700CF2E85 /* UserDto+TwitterKit.swift in Sources */,
+				4A313FE6208097FA00C453F6 /* HistoryLocalRepository.swift in Sources */,
+				4A44F103208EC55D001260D4 /* SizeDto.swift in Sources */,
+				3BE1BFCD207BA9CA00AFEFAE /* CGFloat+Math.swift in Sources */,
+				4A44F107208EC64E001260D4 /* RLMSizeEntity.swift in Sources */,
+				4A8CBF7A208468EC00CF2E85 /* RLMHistoryEntity+HistoryDto.swift in Sources */,
+				3B777D5620765A1C00C6363F /* UITableView+Base.swift in Sources */,
+				3B777D5020765A1C00C6363F /* NSObject+Base.swift in Sources */,
+				4AE2BDC72088261000DE603D /* UIColor+UIImage.swift in Sources */,
+				3B777D4F20765A1C00C6363F /* Notification+UIKeyboard.swift in Sources */,
+				3BE1BFCF207BAE4D00AFEFAE /* Double+Math.swift in Sources */,
+				4AE2DEF3207CB718006035B4 /* DateButton.swift in Sources */,
+				4A44F10D208EC93F001260D4 /* SizesDto+TwitterKit.swift in Sources */,
+				3B777D002076560500C6363F /* TwitterAuthViewController.swift in Sources */,
+				3B777CB32071435F00C6363F /* AppDelegate.swift in Sources */,
+				4A8CBF76208454BC00CF2E85 /* FriendResponseDto+TwitterKit.swift in Sources */,
+				4A313FBC207F26AF00C453F6 /* AccountListViewModel.swift in Sources */,
+				3B777D8C2077B22F00C6363F /* SessionDto.swift in Sources */,
+				3BE1BFCB207A50E200AFEFAE /* PieChartView.swift in Sources */,
+				4A313FC6207F458100C453F6 /* RLMUserLocalRepository.swift in Sources */,
+				4A44F0EC208DAC0A001260D4 /* RLMRetweetedStatusEntity+RetweetedStatusDto.swift in Sources */,
+				3BE1BFC9207A4D4600AFEFAE /* TKBaseRepository.swift in Sources */,
+				4A8CBF9A2085E7AE00CF2E85 /* SplashViewController.swift in Sources */,
+				4A3A74D3208970DD005CB13B /* BaseCircleViewController.swift in Sources */,
+				4A44F0EA208DAB78001260D4 /* RLMRetweetedStatusEntity.swift in Sources */,
+				4A964B57207DF59C00166A89 /* RLMFriendLocalRepository.swift in Sources */,
+				4A44F10F208EC997001260D4 /* RLMSizesEntity.swift in Sources */,
+				4A44F0F2208DBAAB001260D4 /* RLMMediaEntity.swift in Sources */,
+				3BE1BFDC207BB87400AFEFAE /* TweetListCell.swift in Sources */,
+				3B777D5820765A1C00C6363F /* UIViewController+Base.swift in Sources */,
+				4A313FC4207F456100C453F6 /* UserLocalRepository.swift in Sources */,
+				4A44F0E8208DAA9D001260D4 /* RetweetedStatusDto+TwitterKit.swift in Sources */,
+				4A44F109208EC877001260D4 /* RLMSizeEntity+SizeDto.swift in Sources */,
+				4A44F105208EC5B4001260D4 /* SizeDto+TwitterKit.swift in Sources */,
+				4A3A74E72089CBAE005CB13B /* SettingViewController.swift in Sources */,
+				4A8CBFA92087126600CF2E85 /* ReloadMessageView.swift in Sources */,
+				3B777DE12079D41400C6363F /* TKUserTimelineRepository.swift in Sources */,
+				4A313FF120843F0900C453F6 /* SessionLocalRepository.swift in Sources */,
+				4A964B5A207DF62800166A89 /* RLMFriendResponseEntity.swift in Sources */,
+				4A8CBF81208495A600CF2E85 /* TabBarController.swift in Sources */,
+				3B777D8D2077B22F00C6363F /* TKFriendRepository.swift in Sources */,
+				3B777D5220765A1C00C6363F /* UIButton+Localized.swift in Sources */,
+				3B777CFB2076536300C6363F /* VendorInfo.swift in Sources */,
+				4A8CBF9120858DC500CF2E85 /* RLMTweetEntity+TweetDto.swift in Sources */,
+				4A01700B209046C9002A39C1 /* UAObfuscatedString.swift in Sources */,
+				4A3A74CF20897046005CB13B /* MyCircleViewController.swift in Sources */,
+				3B777D5720765A1C00C6363F /* UIView+Base.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B777CBF2071435F00C6363F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B777CC82071435F00C6363F /* TwitterCircleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B777CCA2071435F00C6363F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B777CD32071435F00C6363F /* TwitterCircleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B777CC52071435F00C6363F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B777CAE2071435F00C6363F /* TwitterCircle */;
+			targetProxy = 3B777CC42071435F00C6363F /* PBXContainerItemProxy */;
+		};
+		3B777CD02071435F00C6363F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B777CAE2071435F00C6363F /* TwitterCircle */;
+			targetProxy = 3B777CCF2071435F00C6363F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B777CBB2071435F00C6363F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B777CBC2071435F00C6363F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B777CD52071435F00C6363F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B777CD62071435F00C6363F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B777CD82071435F00C6363F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3B9DEY9FY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TwitterCircle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG -Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.mn-D128.TwitterCircle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3B777CD92071435F00C6363F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3B9DEY9FY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TwitterCircle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.mn-D128.TwitterCircle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3B777CDB2071435F00C6363F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3B9DEY9FY;
+				INFOPLIST_FILE = TwitterCircleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.mn-D128.TwitterCircleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitterCircle.app/TwitterCircle";
+			};
+			name = Debug;
+		};
+		3B777CDC2071435F00C6363F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3B9DEY9FY;
+				INFOPLIST_FILE = TwitterCircleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.mn-D128.TwitterCircleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitterCircle.app/TwitterCircle";
+			};
+			name = Release;
+		};
+		3B777CDE2071435F00C6363F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3B9DEY9FY;
+				INFOPLIST_FILE = TwitterCircleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.mn-D128.TwitterCircleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TwitterCircle;
+			};
+			name = Debug;
+		};
+		3B777CDF2071435F00C6363F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3B9DEY9FY;
+				INFOPLIST_FILE = TwitterCircleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.mn-D128.TwitterCircleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TwitterCircle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B777CAA2071435E00C6363F /* Build configuration list for PBXProject "TwitterCircle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B777CD52071435F00C6363F /* Debug */,
+				3B777CD62071435F00C6363F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B777CD72071435F00C6363F /* Build configuration list for PBXNativeTarget "TwitterCircle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B777CD82071435F00C6363F /* Debug */,
+				3B777CD92071435F00C6363F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B777CDA2071435F00C6363F /* Build configuration list for PBXNativeTarget "TwitterCircleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B777CDB2071435F00C6363F /* Debug */,
+				3B777CDC2071435F00C6363F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B777CDD2071435F00C6363F /* Build configuration list for PBXNativeTarget "TwitterCircleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B777CDE2071435F00C6363F /* Debug */,
+				3B777CDF2071435F00C6363F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B777CA72071435E00C6363F /* Project object */;
+}

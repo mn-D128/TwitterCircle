@@ -1,0 +1,43 @@
+name: Chameleon, nameSpecified: , owner: viccalexander, version: 2.2.0
+
+name: Font-Awesome, nameSpecified: , owner: FortAwesome, version: v4.7.0
+
+name: FontAwesomeKit, nameSpecified: , owner: PrideChung, version: 2.2.1
+
+name: FSCalendar, nameSpecified: , owner: WenchaoD, version: 2.7.9
+
+name: handMadeCalendarAdvance, nameSpecified: , owner: fumiyasac, version: 0.1.6
+
+name: LicensePlist, nameSpecified: , owner: mono0926, version: 1.8.3
+
+name: MBProgressHUD, nameSpecified: , owner: jdg, version: 1.1.0
+
+name: Nuke, nameSpecified: , owner: kean, version: 6.1
+
+name: ObjectMapper, nameSpecified: , owner: Hearst-DD, version: 3.1.0
+
+name: realm-cocoa, nameSpecified: , owner: realm, version: v3.4.0
+
+name: Result, nameSpecified: , owner: antitypical, version: 3.2.4
+
+name: RxOptional, nameSpecified: , owner: RxSwiftCommunity, version: 3.3.0
+
+name: RxSwift, nameSpecified: , owner: ReactiveX, version: 4.1.2
+
+name: SwiftyGif, nameSpecified: , owner: kirualex, version: 4.1.0
+
+name: SwiftyUserDefaults, nameSpecified: , owner: radex, version: 3.0.1
+
+name: Toast-Swift, nameSpecified: , owner: scalessec, version: 3.0.1
+
+name: UAObfuscatedString, nameSpecified: , owner: UrbanApps, version: 0.5.1
+
+name: XCGLogger, nameSpecified: , owner: DaveWoodCom, version: 6.0.2
+
+name: twitter-kit-ios, nameSpecified: , version: v.3.2.1
+body:  Apache License
+Vers…
+
+add-version-numbers: false
+
+LicensePlist Version: 1.8.3

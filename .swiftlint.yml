@@ -1,0 +1,29 @@
+# paths to ignore during linting. Takes precedence over `included`.
+excluded:
+- Carthage
+- Vendor
+
+# 無効にするルール
+disabled_rules:
+- force_cast
+- force_try
+- line_length
+- todo
+- empty_enum_arguments
+- block_based_kvo
+
+# 変数名
+identifier_name:
+  min_length: 2
+  excluded:
+    - w
+    - h
+
+# typealias
+type_name:
+  excluded:
+    - E
+
+# 複雑性
+cyclomatic_complexity:
+  warning: 12

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PzV-Hs-vQf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Media View Controller-->
+        <scene sceneID="Qfv-5x-CLK">
+            <objects>
+                <viewController id="PzV-Hs-vQf" customClass="ImageMediaViewController" customModule="TwitterCircle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="40S-ch-BhY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfH-4A-HX6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHn-F4-Kia">
+                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w0Y-kO-WCF">
+                                        <rect key="frame" x="67" y="234" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9f-bL-utl">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrN-Um-Xzu">
+                                        <rect key="frame" x="20" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="1WY-cI-4et"/>
+                                            <constraint firstAttribute="width" secondItem="yrN-Um-Xzu" secondAttribute="height" multiplier="1:1" id="AuC-L7-vBM"/>
+                                        </constraints>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yrN-Um-Xzu" firstAttribute="centerY" secondItem="M9f-bL-utl" secondAttribute="centerY" id="COT-JP-jW1"/>
+                                    <constraint firstItem="yrN-Um-Xzu" firstAttribute="leading" secondItem="M9f-bL-utl" secondAttribute="leading" constant="20" id="N09-8r-Q4v"/>
+                                    <constraint firstAttribute="height" constant="50" id="cpt-fs-nVd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5HX-s7-kXM" firstAttribute="trailing" secondItem="zfH-4A-HX6" secondAttribute="trailing" id="5lj-z0-wvA"/>
+                            <constraint firstItem="5HX-s7-kXM" firstAttribute="trailing" secondItem="M9f-bL-utl" secondAttribute="trailing" id="AVd-bF-gN6"/>
+                            <constraint firstItem="5HX-s7-kXM" firstAttribute="bottom" secondItem="zfH-4A-HX6" secondAttribute="bottom" id="F7Y-Ij-KXp"/>
+                            <constraint firstItem="aHn-F4-Kia" firstAttribute="leading" secondItem="5HX-s7-kXM" secondAttribute="leading" id="RAv-4x-YDF"/>
+                            <constraint firstItem="5HX-s7-kXM" firstAttribute="bottom" secondItem="M9f-bL-utl" secondAttribute="bottom" id="dxe-ck-R5m"/>
+                            <constraint firstItem="5HX-s7-kXM" firstAttribute="trailing" secondItem="aHn-F4-Kia" secondAttribute="trailing" id="iGf-FE-j8j"/>
+                            <constraint firstItem="M9f-bL-utl" firstAttribute="leading" secondItem="5HX-s7-kXM" secondAttribute="leading" id="j6o-gb-BnW"/>
+                            <constraint firstItem="zfH-4A-HX6" firstAttribute="leading" secondItem="5HX-s7-kXM" secondAttribute="leading" id="sQI-0Z-9it"/>
+                            <constraint firstItem="M9f-bL-utl" firstAttribute="top" secondItem="aHn-F4-Kia" secondAttribute="bottom" id="wKm-E2-YpM"/>
+                            <constraint firstItem="aHn-F4-Kia" firstAttribute="top" secondItem="5HX-s7-kXM" secondAttribute="top" id="xNU-CH-Q1g"/>
+                            <constraint firstItem="zfH-4A-HX6" firstAttribute="top" secondItem="5HX-s7-kXM" secondAttribute="top" id="zh5-Dl-bWO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5HX-s7-kXM"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="zfH-4A-HX6" id="7px-pZ-vkL"/>
+                        <outlet property="closeBtn" destination="yrN-Um-Xzu" id="CJu-Qi-f7e"/>
+                        <outlet property="imageView" destination="w0Y-kO-WCF" id="df0-jM-hgl"/>
+                        <outlet property="menuView" destination="M9f-bL-utl" id="hpZ-m2-9L9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S7f-VH-bwv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="175"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ae6-1C-YVY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="gRI-p6-ZS1">
+            <objects>
+                <viewController id="Ae6-1C-YVY" customClass="SplashViewController" customModule="TwitterCircle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k52-Cf-1dx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tR1-yc-dfe">
+                                <rect key="frame" x="135" y="299" width="104" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tR1-yc-dfe" secondAttribute="height" multiplier="208:180" id="JRx-ZX-hOQ"/>
+                                    <constraint firstAttribute="width" constant="104" id="xcj-yA-Yg7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tR1-yc-dfe" firstAttribute="centerY" secondItem="dru-wa-NJf" secondAttribute="centerY" id="VpY-7x-hsA"/>
+                            <constraint firstItem="tR1-yc-dfe" firstAttribute="centerX" secondItem="dru-wa-NJf" secondAttribute="centerX" id="dPp-bE-0di"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dru-wa-NJf"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="tR1-yc-dfe" id="aIO-XK-MRJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ie-0e-lYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="-287"/>
+        </scene>
+    </scenes>
+</document>

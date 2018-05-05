@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IVt-Vi-3IA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Twitter Auth View Controller-->
+        <scene sceneID="ots-31-LlE">
+            <objects>
+                <viewController id="IVt-Vi-3IA" customClass="TwitterAuthViewController" customModule="TwitterCircle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nYP-aW-gHd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fZz-6D-Tsn">
+                                <rect key="frame" x="135" y="298.5" width="104" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="Plh-xn-7F0"/>
+                                    <constraint firstAttribute="width" secondItem="fZz-6D-Tsn" secondAttribute="height" multiplier="208:180" id="aOY-1L-lFx"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQ2-pL-syL">
+                                <rect key="frame" x="37" y="348" width="300" height="71.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phk-0I-H1o">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="19.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="16"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedAttributedText" value="TWITTERAUTH_MESSAGE"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hs1-lw-Z64">
+                                        <rect key="frame" x="75" y="39.5" width="150" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="5LQ-3k-nOI"/>
+                                            <constraint firstAttribute="width" constant="150" id="Beo-zQ-giY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="TWITTERAUTH_LOGIN"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Phk-0I-H1o" secondAttribute="trailing" id="4yS-U6-kNO"/>
+                                    <constraint firstItem="hs1-lw-Z64" firstAttribute="top" secondItem="Phk-0I-H1o" secondAttribute="bottom" constant="20" id="KPd-YB-aYZ"/>
+                                    <constraint firstItem="Phk-0I-H1o" firstAttribute="leading" secondItem="yQ2-pL-syL" secondAttribute="leading" id="L2C-0j-URY"/>
+                                    <constraint firstAttribute="bottom" secondItem="hs1-lw-Z64" secondAttribute="bottom" id="L66-jq-vMN"/>
+                                    <constraint firstAttribute="width" constant="300" id="lke-3N-cpT"/>
+                                    <constraint firstItem="hs1-lw-Z64" firstAttribute="centerX" secondItem="yQ2-pL-syL" secondAttribute="centerX" id="oK7-sG-4my"/>
+                                    <constraint firstItem="Phk-0I-H1o" firstAttribute="top" secondItem="yQ2-pL-syL" secondAttribute="top" id="zga-mv-a7O"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yQ2-pL-syL" firstAttribute="centerX" secondItem="PVl-MQ-5Gb" secondAttribute="centerX" id="8ru-SS-Jjk"/>
+                            <constraint firstItem="fZz-6D-Tsn" firstAttribute="centerY" secondItem="PVl-MQ-5Gb" secondAttribute="centerY" id="9nB-w0-ImM"/>
+                            <constraint firstItem="fZz-6D-Tsn" firstAttribute="centerX" secondItem="PVl-MQ-5Gb" secondAttribute="centerX" id="Agz-T6-j6r"/>
+                            <constraint firstItem="yQ2-pL-syL" firstAttribute="centerY" secondItem="PVl-MQ-5Gb" secondAttribute="centerY" constant="40" id="Ra9-ao-x1z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PVl-MQ-5Gb"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="yQ2-pL-syL" id="aVi-qp-z0j"/>
+                        <outlet property="loginBtn" destination="hs1-lw-Z64" id="OVV-Ik-ehl"/>
+                        <outlet property="loginBtnHeight" destination="5LQ-3k-nOI" id="JVl-nK-4tt"/>
+                        <outlet property="loginBtnWidth" destination="Beo-zQ-giY" id="G80-5x-dcK"/>
+                        <outlet property="logoIV" destination="fZz-6D-Tsn" id="Cq9-mv-ZQc"/>
+                        <outlet property="logoIVCenterY" destination="9nB-w0-ImM" id="ShE-kE-lnA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTG-RH-qi6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="73"/>
+        </scene>
+    </scenes>
+</document>

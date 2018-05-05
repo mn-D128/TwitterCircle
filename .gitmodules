@@ -1,0 +1,3 @@
+[submodule "Vendor/mn-D128Extension"]
+	path = Vendor/mn-D128Extension
+	url = https://github.com/mn-D128/iOS_Extension.git
